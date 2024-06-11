@@ -1,20 +1,63 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <title>protfolio project</title>
-    </head>
-    <body>
-        <h1>Tanvi's Portfolio</h1>
-        <h2>I'm a Web Developer</h2>
-        <hr>
-        <a href="./public/movie-ranking.html"><h3>Movie Ranking Project</h3></a>
-        <img src="./assets/images/movie-ranking.png" height="200px"  alt="project2"><br>
-        <a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
-        <img src="./assets/images/birthday-invite.png" height="200px" alt="project1"><br><hr>
-        
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html">Contact Me</a>
-    </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag{
+      height: 600px;
+      width: 900px;
+      position: relative;
+      background-color: #CE1126;
+    }
+    .flag > div{
+      width: 100%;
+      height: 300px;
+      background-color: #002868;
+      position: absolute;
+      top: 150px;
+    }
+    .flag > div >div{
+      height: 200px;
+      width: 200px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+    p{
+      font-size: 5rem;
+      text-align: center;
+      margin: 0%;
+    }
+    .flag > p{
+      color: white;
+    }
+    
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
